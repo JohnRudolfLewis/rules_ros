@@ -1,0 +1,22 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  // would prefer to use an official image and add features to it
+  // but the current community feature for bazel is broken
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  // "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  // "features": {
+  //   "ghcr.io/devcontainers-community/features/bazel": {
+  //     "bazelisk_version": "v1.20.0",
+  //     "buildifier_version": "v7.1.2"
+  //   }
+  // },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "BazelBuild.vscode-bazel",
+      ]
+    }
+  }
+}
